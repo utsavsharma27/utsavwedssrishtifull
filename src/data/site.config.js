@@ -63,7 +63,7 @@ export const site = {
     heading: "With hearts full of gratitude",
     paragraphs: [
       "Together with our families, we joyfully invite you to share in the beginning of our new journey. Utsav and Srishti are getting married, and your presence and blessings would make these days truly complete.",
-      "Please join us for Haldi on 11 December in the morning and our Reception that evening. The Phere and Vidai follow on 12 December. Your love and good wishes mean more to us than any gift. We humbly request you to come and bless the couple.",
+      "Please join us for Engagement on 10 December in the evening, Haldi on 11 December in the morning and our Reception that evening. The Phere and Vidai follow on 12 December. Your love and good wishes mean more to us than any gift. We humbly request you to come and bless the couple.",
     ],
     signOff: "With respect and warm regards",
   },
