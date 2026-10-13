@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VITE_BASE_PATH: "/utsavwedssrishtifull/"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build site
         run: npm run build
 
       - name: Upload Pages artifact
@@ -40,10 +42,11 @@ jobs:
 
   deploy:
     needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
